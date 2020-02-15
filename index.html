@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IndexedDB </title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/lumen/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container mt-5 p-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="text-center my-4">Add Appointment</h2>
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Pet Name:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="text" id="pet-name" class="form-control" placeholder="Pet Name" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Owner Name:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="text" id="owner-name" class="form-control" placeholder="Owner Name" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Phone Number:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="tel" id="phone" class="form-control" placeholder="Phone Number" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Date:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="date" id="date" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Hour:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="time" id="hour" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Symptoms:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <textarea id="symptoms" class="form-control" required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row justify-content-end">
+                        <div class="col-sm-5">
+                            <button type="submit" class="btn btn-success w-100">Add Appointment</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-md-6">
+                <h2 id="appointment-title" class="text-center my-4"></h2>
+                <ul id="appointments" class="list-group"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js" type="module"></script>
+
+</body>
+
+</html>
